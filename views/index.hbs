@@ -1,0 +1,14 @@
+{{>header}}
+  <p>
+    Hello {{person.firstName}}
+    <ul>
+      {{#each person.toys}}
+      <li>
+        {{this}}
+      </li>
+      {{/each}}
+    </ul>
+  </p>
+  {{>footer}}
+</body>
+</html>

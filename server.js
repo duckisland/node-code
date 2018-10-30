@@ -26,10 +26,10 @@ hbs.registerHelper('allCaps', (text)=> {
 })
 
 var person = {
-  firstName: 'Kevin',
-  lastName: 'Barrett',
+  firstName: 'John',
+  lastName: 'Johnson',
   favoriteColor: 'Blue',
-  toys: ['Hotwheels parking garage','Foldhaven','Pinball']
+  toys: ['Ping Pong Table','Pool Table','Pinball Maching','Foosball Table']
 }
 app.get('/',(req, res) => {
   //response.send(person)

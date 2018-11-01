@@ -36,7 +36,7 @@ var person = {
 app.get('/',(req, res) => {
   //response.send(person)
   res.render('index.hbs', {
-    pageTitle: 'Index Page',
+    pageTitle: 'Home page',
     person})
 })
 

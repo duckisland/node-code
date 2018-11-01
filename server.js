@@ -2,7 +2,7 @@ const express = require('express')
 // Handlebars JS (hbs)
 const hbs = require('hbs')
 // Set by Heroku or default to 3000
-const port = process.env.port || 3000
+const port = process.env.PORT || 3000
 
 var app = express()
 

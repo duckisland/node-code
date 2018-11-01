@@ -1,6 +1,8 @@
 const express = require('express')
 // Handlebars JS (hbs)
 const hbs = require('hbs')
+// Set by Heroku or default to 3000
+const port = process.env.port || 3000
 
 var app = express()
 
@@ -51,6 +53,6 @@ app.get('/bad', (req,res) => {
     error: 'Not good'
   })
 })
-app.listen(81, () => {
-  console.log('App is running and such...')
+app.listen(port, () => {
+  console.log('Server is running on port: ' + port)
 })
